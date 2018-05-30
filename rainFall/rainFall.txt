@@ -1,0 +1,53 @@
+ECHO is on.
+4. How much water runs off the roof
+
+INPUTS
+
+userInputRoofLengthFeet
+userInputRoofWidthFeet
+userInputRainfallInches
+
+
+PROCESSING STEPS
+
+Convert userInputRoofLengthFeet to roofLengthInches
+Convert userInputRoofWidthFeet to roofWidthInches
+Multiply roofLengthInches with roofWidthInches with userInputRainfallInches
+Convert rainfallCubicInches to rainfallGallon
+
+
+OUTPUTS
+
+Display rainfallGallon
+
+
+--------------------------------------------------------------------------
+
+PSEUDOCODE
+
+userInputRoofLengthFeet.double
+userInputRoofWidthFeet.double
+userInputRainfallInches.double
+roofLengthInches.double = userInputRoofLengthFeet.double * 12
+roofWidthInches.double = userInputRoofWidthFeet.double * 12
+rainfallCubicInches.double = roofLengthInches.double * roofWidthInches.double * userInputRainfallInches.double
+rainfallGallon.double = rainfallCubicInches.double / 231
+Print
+	rainfallGallon.double
+
+-----------------------------------------------------------------------
+
+CHECK SOLUTION
+
+	
+userInputRoofLengthFeet.double: 10
+userInputRoofWidthFeet.double: 20
+userInputRainfallInches.double: 2
+249.350649....
+
+userInputRoofLengthFeet.double: abc
+userInputRoofWidthFeet.double: 25
+userInputRainfallInches.double: 3
+*invalid*
+
+	
